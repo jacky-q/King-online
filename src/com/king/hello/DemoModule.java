@@ -21,7 +21,7 @@ import com.king.bean.Emperor;
 public class DemoModule {
 	
 	@At("/enlist")
-	@Ok("jsp:/demo/enlist")
+	@Ok("->:/demo/enlist.html")
 	public String enlist(){
 			return null;
 	}
