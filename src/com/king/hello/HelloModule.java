@@ -1,9 +1,7 @@
 package com.king.hello;
 
-import org.nutz.mvc.annotation.At;
 import org.nutz.mvc.annotation.Fail;
 import org.nutz.mvc.annotation.Modules;
-import org.nutz.mvc.annotation.Ok;
 
 /**
  *
@@ -17,21 +15,10 @@ import org.nutz.mvc.annotation.Ok;
 
 @Modules(scanPackage = true)
 public class HelloModule {
-//	@At("/hello")
-//	@Ok("jsp:/hello")
-//	public String doHello(){
-//		return "OK,OK,hello King";
-//	}
 
 	@Fail("jsp:/hello")
 	public String doFail(){
 		return "Where r u?";
 	}
-	
-//	@At("/main")
-//	@Ok("jsp:/main")
-//	public String doMain(){
-//		return "faint";
-//	}
 }
 

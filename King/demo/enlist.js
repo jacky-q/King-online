@@ -52,11 +52,11 @@ function arrowUp(e){
 	}
 	var mouseUpTStamp = new Date().getTime();
 	
-	if(( mouseUpTStamp - mouseDownTStamp) > 1000){ //超过一秒
+	if(( mouseUpTStamp - mouseDownTStamp) > 300){
 		var amount = getElementsByClass('amount','DIV');
 		amount[0].style.height = height  + '%';;
 		amount[0].style.top = (100 - height) + '%';
-		$('am').value = heigth;
+		$('am').value = height;
 	}else{
 		arrow(e);
 	}
@@ -67,7 +67,7 @@ function arrow(e){
 	var amount = getElementsByClass('amount','DIV');
 //	var container = getElementsByClass('container','DIV');
 //	alert('faint');
-	var total = 100; //百分数
+	var total = 100;
 	var current = $('am').value/1;
 	if(action == '+'){
 		current = Math.min(100,current + 1);

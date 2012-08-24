@@ -31,7 +31,6 @@ public class DemoModule {
 	public String kingprofile(){
 		Emperor em = new Emperor();
 		em.setName("µçµÆÅÝ");
-//		System.o
 		return Json.toJson(em,JsonFormat.full());
 	}
 }
