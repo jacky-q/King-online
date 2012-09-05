@@ -5,7 +5,9 @@ import org.nutz.json.JsonFormat;
 import org.nutz.mvc.annotation.At;
 import org.nutz.mvc.annotation.Ok;
 
+import com.king.bean.ComOutput;
 import com.king.bean.Emperor;
+import com.king.dao.ComDao;
 
 /**
  *
@@ -32,6 +34,12 @@ public class DemoModule {
 		Emperor em = new Emperor();
 		em.setName("µçµÆÅÝ");
 		return Json.toJson(em,JsonFormat.full());
+	}
+	@At("/save")
+	@Ok("json")
+	public ComOutput save(){
+		ComOutput co = ComDao.save(); 
+		return co;
 	}
 }
 

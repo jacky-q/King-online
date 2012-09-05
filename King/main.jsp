@@ -10,6 +10,7 @@
 <body>
 <a onclick="go('demo/king profile')">皇帝资料</a>
 <a onclick="go('demo/enlist')">征召</a>
+<a onclick="go('demo/save')">保存</a>
 
 </body>
 <script type="text/javascript" src="/King/js/jquery-compressed.js"></script>
