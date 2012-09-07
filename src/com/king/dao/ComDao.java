@@ -1,6 +1,8 @@
 package com.king.dao;
 
-import com.king.bean.ComOutput;
+import com.king.dao.ComOutput;
+import com.king.dao.emperor.EmperorManage;
+import com.king.dao.emperor.MySqlEmperorManage;
 
 /**
  *
@@ -15,8 +17,10 @@ import com.king.bean.ComOutput;
 public class ComDao {
 
 	public static ComOutput save() {
-		// TODO Auto-generated method stub
-		return null;
+		EmperorManage em = new MySqlEmperorManage();
+		
+		ComOutput co = em.save(); 
+		return co;
 	}
 
 }

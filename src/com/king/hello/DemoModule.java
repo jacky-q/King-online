@@ -5,7 +5,7 @@ import org.nutz.json.JsonFormat;
 import org.nutz.mvc.annotation.At;
 import org.nutz.mvc.annotation.Ok;
 
-import com.king.bean.ComOutput;
+import com.king.dao.ComOutput;
 import com.king.bean.Emperor;
 import com.king.dao.ComDao;
 
